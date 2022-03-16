@@ -1,0 +1,85 @@
+﻿<div class="jumbotron">
+    <h2 class="display-4" style="text-align: center">Reports</h2>
+    <p class="lead" style="text-align: center">Συμπλήρωστε τα παρακάτω και πιέστε το κουμπί Submit για να πάρετε αποτελεσματα</p>
+    <p class="lead" style="text-align: center">για τα ερωτηματα 1,2,3</p>
+    <hr class="my-4">
+    <div class="row">
+        <div class="col-md-6">
+            @using (Html.BeginForm("TopArtists", "Home", FormMethod.Post))
+            {
+                <form>
+                    <fieldset>
+                        <div class="form-group" align="center">
+                            <h5 class="display-6" style="text-align: center">Ανεκτησε Καλλιτεχνες που οι δισκοι ειναι πρώτοι σε πωλήσεις</h5>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="ArtistAmount" id="ArtistAmount" placeholder="# of Artists" style="border: 1.5px solid white">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="StartDate" id="StartDate" placeholder="From (2009-01-01 00:00:00.000)" style="border: 1.5px solid white">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="EndDate" id="EndDate" placeholder="To (2013-01-01 00:00:00.000)" style="border: 1.5px solid white">
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <button type="submit" class="btn btn-primary" value="TopArtists">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            }
+        </div>
+        <div class="col-md-6">
+            @using (Html.BeginForm("TopTracks", "Home", FormMethod.Post))
+            {
+                <form>
+                    <fieldset>
+                        <div class="form-group" align="center">
+                            <h5 class="display-6" style="text-align: center">ΤΟΠ 10 ΤΡΑΓΟΥΔΙΑ ΣΕ ΠΡΟΤΙΜΗΣΗ ΜΕΤΑΞΥ ΗΜΕΡΟΜΗΝΙΩΝ</h5>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="StartDate" id="StartDate" placeholder="From (2009-01-01 00:00:00.000)" style="border: 1.5px solid white">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="EndDate" id="EndDate" placeholder="From (2009-01-01 00:00:00.000)" style="border: 1.5px solid white">
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <button type="submit" class="btn btn-primary" value="" align="center" style="text-align: center">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            }
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                @using (Html.BeginForm("TopGenre", "Home", FormMethod.Post))
+                {
+                    <form>
+                        <fieldset>
+                            <div class="form-group" align="center">
+                                <h5 class="display-6" style="text-align: center">No1 ΕΙΔΟΣ ΜΟΥΣΙΚΗ ΒΑΣΗ ΧΡΟΝΟΛΟΓΙΑΣ </h5>
+                                <div class="form-group">
+                                    <h7 class="display-6" style="text-align: center">Επιλέξτε μια χρονιά απο τις παρακάτω:</h7>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary" name="Date" id="Date" value="2009" align="center" style="text-align: center">2009</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary" name="Date" id="Date" value="2010" align="center" style="text-align: center">2010</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary" name="Date" id="Date" value="2011" align="center" style="text-align: center">2011</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary" name="Date" id="Date" value="2012" align="center" style="text-align: center">2012</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary" name="Date" id="Date" value="2013" align="center" style="text-align: center">2013</button>
+                                    </div>
+                                </div>
+</fieldset>
+                    </form>
+                }
+                </div>
+            </div>
+
+
+        </div>

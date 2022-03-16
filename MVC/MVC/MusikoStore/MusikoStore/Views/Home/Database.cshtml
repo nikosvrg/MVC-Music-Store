@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Database";
+}
+<div class="container">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="well well-sm">
+            <fieldset>
+                <legend class="text-center">ΔΙΑΧΕΙΡΗΣΗ ΤΗΣ ΒΑΣΗΣ ΔΕΔΟΜΕΝΩΝ ΤΟΥ ΜΟΥΣΙΚΟΥ ΔΙΣΚΟΠΩΛΕΙΟΥ ΕΠΙΛΕΓΩΝΤΑΣ ΚΑΠΟΙΟ ΑΠΟ ΤΑ ΠΑΡΑΚΑΤΩ ΠΕΔΙΑ</legend>
+                <div class="text-center">
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-secondary btn-lg">@Html.ActionLink("Artists", "Index", "Artists")</button>
+                        <button type="button" class="btn btn-secondary btn-lg">@Html.ActionLink("Albums", "Index", "Albums")</button>
+                        <button type="button" class="btn btn-secondary btn-lg">@Html.ActionLink("Genres", "Index", "Genres")</button>
+                        <button type="button" class="btn btn-secondary btn-lg">@Html.ActionLink("Tracks", "Index", "Tracks")</button>
+                        <button type="button" class="btn btn-secondary btn-lg">@Html.ActionLink("Playlists", "Index", "Playlists")</button>
+                        <button type="button" class="btn btn-secondary btn-lg">@Html.ActionLink("MediaTypes", "Index", "MediaTypes")</button>
+                        <button type="button" class="btn btn-secondary btn-lg">@Html.ActionLink("Invoices", "Index", "Invoices")</button>
+                        <button type="button" class="btn btn-secondary btn-lg">@Html.ActionLink("InvoiceLines", "Index", "InvoiceLines")</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-secondary btn-lg">@Html.ActionLink("Customers", "Index", "Customers")</button>
+                        <button type="button" class="btn btn-secondary btn-lg"> @Html.ActionLink("Employees", "Index", "Employess")</button>
+                        </div>
+                    </div>
+
+</fieldset>
+        </div>
+    </div>
+</div>
